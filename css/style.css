@@ -126,24 +126,8 @@ header {
 .about-container h3 {
     
 }
-.card {
-    overflow: hidden;
-}
-.about .card-body {
-    position: absolute;
-    background: #f8c65ac7;
-    bottom: -50%;
-    right: 0;
-    transition: all .7s linear;
-}
-.card:hover .card-body {
-    bottom: 0;
-}
 .card-body i {
     font-size: 25px;
-}
-.card img {
-    height: 400px;
 }
 .underline{
     width: 10%;
@@ -151,6 +135,21 @@ header {
     margin: 0 auto 10px auto;
     background: #FFAF00;
     display: block;
+}
+.about-food-container .card img {
+    height: 400px;
+}
+.about-food-container .card-body {
+    position: absolute;
+    bottom: -300px;
+    background: #f8c65ac7;
+    transition: all .5s linear;
+}
+.about-food-container .card:hover .card-body {
+    bottom: 0;
+}
+.about-food-container .card {
+    overflow: hidden;
 }
 #booking {
     position: relative;
@@ -313,7 +312,7 @@ h4 {
 #footer img:nth-of-type(2) {
     right: -15%;
 }
-.nav-fixed {
+.fixed-nav {
     position: fixed;
     background: #e9edf09d;
     top: 0;
@@ -425,6 +424,9 @@ h4 {
     }
 }
 @media screen and (max-width: 780px) {
+    body {
+        overflow-x: hidden;
+    }
     header {
         background: #e9edf09d;
         backdrop-filter: blur(20px);

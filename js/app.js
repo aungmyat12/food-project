@@ -41,15 +41,17 @@ $('.about-food-container').slick({
     });
 
 let screenHeight = $(window).height();
-// console.log(screenHeight);
+console.log(screenHeight)
 $(window).scroll(function() {
     let currentPosition = $(this).scrollTop();
-    // console.log(currentPosition);
+    console.log(currentPosition);
     if(currentPosition > screenHeight - 100) {
-        $('header').addClass("nav-fixed");
+        $('header').addClass("fixed-nav");
+        console.log('hi');
     } else {
-        $('header').removeClass("nav-fixed");
+        $('header').removeClass("fixed-nav");
         setActive("home");
+        console.log("hey");
     }
 })
 
@@ -60,8 +62,8 @@ function setActive(current) {
 function navScroll() {
 
     let currentSection = $("section[id]");
+    console.log(currentSection);
     currentSection.waypoint(function (direction) {
-
         if(direction == "down"){
             let currentSectionId = $(this.element).attr('id');
             setActive(currentSectionId);
