@@ -2,12 +2,18 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+:root {
+    --nav-bg: #e9edf09d;
+    --card-bg: #f8c65ac7;
+    --nav-bar: #000;
+    --white: #fff;
+}
 html {
     scroll-behavior: smooth;
 }
 body {
     overflow-x: hidden;
-    background: #F8FDFF;
+    background: var(info);
 }
 header {
     position: absolute;
@@ -21,7 +27,7 @@ header {
     outline: none;
 }
 .navbar-toggler .bar {
-    background: #000;
+    background: var(--nav-bar);
     width: 100%;
     height: 4px;
     margin-bottom: 5px;
@@ -44,13 +50,13 @@ header {
     height: 90%;
 }
 .home-form {
-    background: #fff;
+    background: var(white);
     padding: 5px;
     width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 2rem 0rem #FFF3D8;
+    box-shadow: 0 0 2rem 0rem var(pink);
     z-index: 1;
     opacity: 0;
     animation: animateFadeInRight 1.5s cubic-bezier(.57,.71,.89,.55) forwards 1.3s;
@@ -87,7 +93,7 @@ header {
     height: 100vh;
     width: 35%;
     right: 0;
-    background: #ffaf00;
+    background: var(wanning);
 }
 .profile-img {
     z-index: 4000;
@@ -133,7 +139,7 @@ header {
     width: 10%;
     height: 8px;
     margin: 0 auto 10px auto;
-    background: #FFAF00;
+    background: var(wanning);
     display: block;
 }
 .about-food-container .card img {
@@ -142,7 +148,7 @@ header {
 .about-food-container .card-body {
     position: absolute;
     bottom: -300px;
-    background: #f8c65ac7;
+    background: var(--card-bg);
     transition: all .5s linear;
 }
 .about-food-container .card:hover .card-body {
@@ -189,7 +195,7 @@ header {
     transition: all .5s linear;
 }
 .bg-img:hover {
-    box-shadow: 0 0 2rem 0rem #FFF3D8;
+    box-shadow: 0 0 2rem 0rem var(pink);
 }
 .services-img {
     width: 120px;
@@ -213,7 +219,7 @@ h4 {
     width: 20%;
     height: 3px;
     border-radius: 10px;
-    background: #ffaf00;
+    background: var(wanning);
     display: inline-block;
     position: absolute;
     bottom: 5px;
@@ -222,7 +228,7 @@ h4 {
     width: 15px;
     height: 3px;
     border-radius: 10px;
-    background: #ffaf00;
+    background: var(wanning);
     display: inline-block;
     position: absolute;
     bottom: 5px;
@@ -233,14 +239,14 @@ h4 {
     width: 150px;
     height: 3px;
     border-radius: 10px;
-    background: #ffaf00;
+    background: var(wanning);
     display: inline-block;
 }
 .line4 {
     width: 20px;
     height: 3px;
     border-radius: 10px;
-    background: #ffaf00;
+    background: var(wanning);
     display: inline-block;
 }
 .services2 .line1 {
@@ -270,13 +276,13 @@ h4 {
 }
 .email-form {
     border-radius: 40px;
-    background: #fff;
+    background: var(white);
     padding: 8px;
     width: 350px;
-    box-shadow: 0 0 2rem 0rem #FFF3D8;
+    box-shadow: 0 0 2rem 0rem var(pink);
 }
 .email-form input {
-    color: #EFF7FB;
+    color: var(blue);
     outline: none;
     background: none;
     border: none;
@@ -295,7 +301,7 @@ h4 {
     z-index: 200;
 }
 .download-container {
-    background: #EFF7FB;
+    background: var(blue);
 }
 #footer {
     overflow-x: hidden;
@@ -314,7 +320,7 @@ h4 {
 }
 .fixed-nav {
     position: fixed;
-    background: #e9edf09d;
+    background: var(--nav-bg);
     top: 0;
     backdrop-filter: blur(20px);
     animation: fromTop .5s linear;
@@ -335,7 +341,7 @@ h4 {
     display: block;
     width: 0%;
     height: 4px;
-    background: #2E266F;
+    background: var(primary);
     animation: currentSection 1s forwards;
 }
 @keyframes currentSection {
@@ -371,7 +377,7 @@ h4 {
     animation: load7 1.8s infinite ease-in-out;
 }
 .loader {
-    color: #2E266F;
+    color: var(primary);
     font-size: 10px;
     margin: 80px auto;
     position: relative;
@@ -389,13 +395,13 @@ h4 {
     top: 0;
 }
 .loader:before {
-    color: #f4110b;
+    color: var(primary);
     left: -3.5em;
     -webkit-animation-delay: -0.32s;
     animation-delay: -0.32s;
 }
 .loader:after {
-    color: #FFAF00;
+    color: var(wanning);
     left: 3.5em;
 }
 @-webkit-keyframes load7 {
@@ -428,7 +434,7 @@ h4 {
         overflow-x: hidden;
     }
     header {
-        background: #e9edf09d;
+        background: var(--nav-bg);
         backdrop-filter: blur(20px);
     }
     .navbar-collapse {
@@ -475,7 +481,7 @@ h4 {
 }
 @media screen and (max-width: 576px) {
     header {
-        background: #e9edf09d;
+        background: var(--nav-bg);
         backdrop-filter: blur(20px);
     }
     .navbar-collapse {
