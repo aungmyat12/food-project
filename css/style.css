@@ -7,6 +7,8 @@
     --card-bg: #f8c65ac7;
     --nav-bar: #000;
     --white: #fff;
+    --primary: #2E266F;
+    --wanning: #FFAF00;
 }
 html {
     scroll-behavior: smooth;
@@ -93,7 +95,7 @@ header {
     height: 100vh;
     width: 35%;
     right: 0;
-    background: var(wanning);
+    background: var(--wanning);
 }
 .profile-img {
     z-index: 4000;
@@ -139,7 +141,7 @@ header {
     width: 10%;
     height: 8px;
     margin: 0 auto 10px auto;
-    background: var(wanning);
+    background: var(--wanning);
     display: block;
 }
 .about-food-container .card img {
@@ -219,7 +221,7 @@ h4 {
     width: 20%;
     height: 3px;
     border-radius: 10px;
-    background: var(wanning);
+    background: var(--wanning);
     display: inline-block;
     position: absolute;
     bottom: 5px;
@@ -228,7 +230,7 @@ h4 {
     width: 15px;
     height: 3px;
     border-radius: 10px;
-    background: var(wanning);
+    background: var(--wanning);
     display: inline-block;
     position: absolute;
     bottom: 5px;
@@ -239,14 +241,14 @@ h4 {
     width: 150px;
     height: 3px;
     border-radius: 10px;
-    background: var(wanning);
+    background: var(--wanning);
     display: inline-block;
 }
 .line4 {
     width: 20px;
     height: 3px;
     border-radius: 10px;
-    background: var(wanning);
+    background: var(--wanning);
     display: inline-block;
 }
 .services2 .line1 {
@@ -341,7 +343,7 @@ h4 {
     display: block;
     width: 0%;
     height: 4px;
-    background: var(primary);
+    background: var(--primary);
     animation: currentSection 1s forwards;
 }
 @keyframes currentSection {
@@ -377,7 +379,7 @@ h4 {
     animation: load7 1.8s infinite ease-in-out;
 }
 .loader {
-    color: var(primary);
+    color: var(--wanning);
     font-size: 10px;
     margin: 80px auto;
     position: relative;
@@ -395,13 +397,13 @@ h4 {
     top: 0;
 }
 .loader:before {
-    color: var(primary);
+    color: var(--primary);
     left: -3.5em;
     -webkit-animation-delay: -0.32s;
     animation-delay: -0.32s;
 }
 .loader:after {
-    color: var(wanning);
+    color: var(--primary);
     left: 3.5em;
 }
 @-webkit-keyframes load7 {
