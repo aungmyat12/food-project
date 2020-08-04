@@ -1,6 +1,6 @@
-@font-face {
-    font-family: Georgia;
-    src: url(../font/georgiabold.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
 }
 html {
     scroll-behavior: smooth;
@@ -91,6 +91,9 @@ header {
 }
 .profile-img {
     z-index: 4000;
+}
+.profile-img img {
+    width: 40px;
 }
 .place {
     position: absolute;
@@ -369,7 +372,7 @@ h4 {
     animation: load7 1.8s infinite ease-in-out;
 }
 .loader {
-    color: #2e266f;
+    color: #2E266F;
     font-size: 10px;
     margin: 80px auto;
     position: relative;
@@ -387,11 +390,13 @@ h4 {
     top: 0;
 }
 .loader:before {
+    color: #f4110b;
     left: -3.5em;
     -webkit-animation-delay: -0.32s;
     animation-delay: -0.32s;
 }
 .loader:after {
+    color: #FFAF00;
     left: 3.5em;
 }
 @-webkit-keyframes load7 {

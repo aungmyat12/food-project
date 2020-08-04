@@ -60,12 +60,10 @@ function setActive(current) {
 function navScroll() {
 
     let currentSection = $("section[id]");
-    console.log(currentSection)
     currentSection.waypoint(function (direction) {
 
         if(direction == "down"){
             let currentSectionId = $(this.element).attr('id');
-            console.log(currentSectionId);
             setActive(currentSectionId);
         }
 
@@ -75,7 +73,6 @@ function navScroll() {
 
         if(direction == "up"){
             let currentSectionId = $(this.element).attr('id');
-            console.log(currentSectionId);
             setActive(currentSectionId);
         }
 
